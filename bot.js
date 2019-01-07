@@ -6,7 +6,8 @@ const fetchVideoInfo = require('youtube-info');
 const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");//youtube api key
 const queue = new Map();//the queue map
-const prefix = '1'//your prefix
+const token = process.env.BOT_TOKEN//your bot token
+const prefix = '1'
  
  
  
@@ -316,5 +317,3 @@ function play(guild, song) {
 })
 }
 }); //Toxic Codes
-
-client.login(process.env.BOT_TOKEN);
