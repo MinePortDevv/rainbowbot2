@@ -17,11 +17,11 @@ client.on("ready", () => {
 });
 
 client.on('ready' , async ready => {
- client.user.setActivity("You", {type:'WATCHING'});
+ client.user.setActivity("Type j!invite ", {type:'WATCHING'});
 });
 
 client.on("message", message => {
-  var prefix = "!"
+  var prefix = "j!"
     if(message.content.startsWith(prefix + 'invite')) {
         message.delete(5000)
         if(!message.channel.guild) return;
