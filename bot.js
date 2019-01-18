@@ -5,14 +5,14 @@ client.on("ready", () => {
   function lol() {
     client.guilds.get('487943764355055618').roles.find("name", "rainbow").setColor("RANDOM");
   };
-  setInterval(lol, 50);
+  setInterval(lol, 1000);
 });
 
 client.on("ready", () => {
   function lol() {
     client.guilds.get('474838434343813120').roles.find("name", "rainbow").setColor("RANDOM");
   };
-  setInterval(lol, 50);
+  setInterval(lol, 1000);
 });
  
 client.login(process.env.BOT_TOKEN);
