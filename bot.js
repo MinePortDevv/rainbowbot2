@@ -27,14 +27,14 @@ client.on("message", message => {
         if(!message.channel.guild) return;
         const e = new Discord.RichEmbed()
         .setColor('#36393e')
-        .setDescription(`***Check your DM message.***`)
+        .setDescription(`Check your DM message.`)
      const embed = new Discord.RichEmbed()
          .setColor('#36393e')
          .setTitle('Click to get bot invite ')
          .setURL('https://discordapp.com/oauth2/authorize?client_id=532329689344114698&scope=bot&permissions=268435456')
          .setDescription(``)
    message.channel.send(e).then(m => m.delete(5000))
-   message.author.sendEmbed(embed).catch(error => message.reply('*please open your DM first.*'))
+   message.author.sendEmbed(embed).catch(error => message.reply('please open your DM first.'))
    
    }
    });
