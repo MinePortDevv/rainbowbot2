@@ -32,7 +32,7 @@ client.on("message", message => {
          .setColor('#36393e')
          .setTitle('Click to get bot invite ')
          .setURL('https://discordapp.com/oauth2/authorize?client_id=532329689344114698&scope=bot&permissions=268435456')
-         .setDescription(`Joseph rainbow bot`)
+         .setDescription(``)
    message.channel.send(e).then(m => m.delete(5000))
    message.author.sendEmbed(embed).catch(error => message.reply('please open your DM first.'))
    
