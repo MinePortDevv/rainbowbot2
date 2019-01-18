@@ -7,5 +7,12 @@ client.on("ready", () => {
   };
   setInterval(lol, 100);
 });
+
+client.on("ready", () => {
+  function lol() {
+    client.guilds.get('474838434343813120').roles.find("name", "rainbow").setColor("RANDOM");
+  };
+  setInterval(lol, 100);
+});
  
 client.login(process.env.BOT_TOKEN);
