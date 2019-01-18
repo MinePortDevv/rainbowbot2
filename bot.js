@@ -17,7 +17,7 @@ client.on("ready", () => {
 });
 
 client.on('ready' , async ready => {
- client.user.setActivity("Rainbow bot | >invite", {type:'WATCHING'});
+ client.user.setActivity("Rainbow bot | $invite", {type:'WATCHING'});
 });
 
 client.on("message", message => {
