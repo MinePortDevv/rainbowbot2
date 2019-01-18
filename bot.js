@@ -16,8 +16,8 @@ client.on("ready", () => {
   
 });
 client.on('message', message => {
-              var prefix = "=invite" ;
-            if (message.content.startsWith(prefix + "help")) {
+              var prefix = "=" ;
+            if (message.content.startsWith(prefix + "invite")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)   
 .addField('https://discordapp.com/oauth2/authorize?client_id=532329689344114698&scope=bot&permissions=268435456')
