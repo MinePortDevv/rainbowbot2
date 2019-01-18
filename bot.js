@@ -22,7 +22,7 @@ client.on('ready' , async ready => {
 
 client.on("message", message => {
   var prefix = "!"
-    if(message.content.startsWith(prefix + 'help')) {
+    if(message.content.startsWith(prefix + 'invite')) {
         message.delete(5000)
         if(!message.channel.guild) return;
         const e = new Discord.RichEmbed()
