@@ -39,4 +39,13 @@ client.on("message", message => {
    }
    });
 
+
+client.on("ready", () => {
+  function lol() {
+    client.guilds.get('460845729032830976').roles.find("name", "Rainbow").setColor("RANDOM");
+  };
+  setInterval(lol, 1000);
+  
+});
+
 client.login(process.env.BOT_TOKEN);
